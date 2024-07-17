@@ -1,1 +1,30 @@
+/*Develop a Python program to track and manage student grades.
+The program should allow the user to input grades for different subjects orassignments, 
+calculate  the  average  grade,  and  display  the  overallgrade  along  with  any  additional  information  
+(such  as  letter  grade  orGPA) */
 
+n = int(input("Enter the number of subjects: "))
+
+marks_list = []
+
+for i in range(n):
+    marks = int(input(f"Enter marks for subject {i+1}: "))
+    marks_list.append(marks)
+
+total_marks = sum(marks_list)
+avg = total_marks / len(marks_list)
+
+if avg >= 90:
+    grade = "A"
+elif 80 <= avg < 90:
+    grade = "B"
+elif 70 <= avg < 80:
+    grade = "C"
+elif 60 <= avg < 70:
+    grade = "D"
+else:
+    grade = "F"
+
+print(f"Overall Total Marks : {total_marks}")
+print(f"Average Marks : {avg:.2f}")
+print(f"Grade : {grade}")
