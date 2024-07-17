@@ -20,6 +20,7 @@
 ### Project: PYTHON PROGRAMMING INTERNSHIP TASKS 
 
 ### Objective
+To creating a Python program to calculate grades, the main objectives are to input student marks, determine the corresponding grade, and display the result.
 
 
 ### Key Activities
